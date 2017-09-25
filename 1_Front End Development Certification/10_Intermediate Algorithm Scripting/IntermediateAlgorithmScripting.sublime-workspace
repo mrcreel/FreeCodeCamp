@@ -1,0 +1,486 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"conso",
+				"console_log"
+			],
+			[
+				"test",
+				"test2"
+			],
+			[
+				"new",
+				"newArr"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"fore",
+				"forEach"
+			],
+			[
+				"arr",
+				"arr1"
+			],
+			[
+				"newa",
+				"newArray"
+			],
+			[
+				"inde",
+				"indexOf\t( searchElement: any, fromIndex?: int ): int Array"
+			],
+			[
+				"resy",
+				"resultArray"
+			],
+			[
+				"diff",
+				"diffArray"
+			],
+			[
+				"result",
+				"resultArray"
+			],
+			[
+				"cons",
+				"console_log"
+			],
+			[
+				"con",
+				"concat\t( items_..: any ): string Array"
+			],
+			[
+				"diffe",
+				"difference"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\nfunction sumAll(arr) {\n\n\tvar total = 0;\n\tfor (var i = Math.min.apply(null, arr); i <= Math.max.apply(null, arr); i++) {\n\t\ttotal += i;\n\t}\n\treturn total;\n\n}\n\n",
+			"file": "1_Sum All Numbers in a Range Complete.js",
+			"file_size": 157,
+			"file_write_time": 131508221981272115,
+			"settings":
+			{
+				"buffer_size": 157,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nEmmet\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n",
+			"settings":
+			{
+				"buffer_size": 1688,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "{\n\t// Copy any modified settings to `User/Emmet.sublime-settings`\n\t// otherwise modifications will not survive updates.\n\n\t// Path to folder where Emmet should look for extensions\n\t// http://docs.emmet.io/customization/\n\t\"extensions_path\": \"~/emmet\",\n\n\t// Disable completions of HTML attributes\n\t// with this option disabled, you can get attribute list completions\n\t// inside opening HTML tags.\n\t// WARNING: with this option disabled, Tab key expander will not\n\t// work inside opening HTML attributes\n\t\"disable_completions\": false,\n\n\t// With this option enabled, all Emmet's CSS snippets\n\t// will be available in standard auto-complete popup\n\t\"show_css_completions\": true,\n\n\t// List of scopes where Emmet CSS completions should be available\n\t\"css_completions_scope\": \"source.css - meta.selector.css - meta.property-value.css, source.scss - meta.selector.scss - meta.property-value.scss, source.less - meta.selector.css - meta.property-value.css\",\n\n\t// Remove default HTML tag completions on plugin start\n\t// You should restart editor after changing this option\n\t\"remove_html_completions\": false,\n\n\t// A comma-separated list of scopes where Emmet’s Tab key\n\t// abbreviation expander should be disabled\t \n\t\"disable_tab_abbreviations_for_scopes\": \"\",\n\n\t// A regexp for scope name: if it matches, Tab handler won’t work\n\t// The reason to use this preference is that ST2 has buggy scope matcher\n\t// which may still trigger Tab handler even if it's restricted by context\n\t\"disable_tab_abbreviations_for_regexp\": \"source\\\\.(?!css).+?\\\\stext\\\\.html\",\n\n\t// Exit tabstop mode when enter key is pressed\n\t\"clear_fields_on_enter_key\": true,\n\n\t// A comma-separated list of disabled action names.\n\t// Listed action will not be triggered by default keyboard\n\t// shortcut.\n\t// Use \"all\" value to disable all shortcuts at once\n\t\"disabled_keymap_actions\": \"\",\n\n\t// By default, Emmet overrides Tab key to effectively expand abbreviations.\n\t// The downside of this approach is that you can’t expand regular ST2\n\t// snippets (like `php`). Since it’s not currently possible to get a list\n\t// of ST2 snippets via API, you can provide a list of scopes where Emmet’s\n\t// Tab trigger should be disabled when expanding simple abbreviation.\n\t// If entered abbreviation (like `php`) wasn’t found in Emmet snippets list\n\t// or \"known_html_tags\" preference, Tab handler will not be triggered.\n\t// Leave this setting blank to disable this feature\n\t\"disabled_single_snippet_for_scopes\": \"text.html\",\n\n\t// A space-separated list of single snippets that should be \n\t// forcilbly disabled (not handled) for Emmet even if it \n\t// has such abbreviation. \n\t// This option is useful if you wish the enumerated snippets\n\t// should be handled by Sublime Text.\n\t// Example value: \"script style html\"\n\t\"disabled_single_snippets\": \"\",\n\n\t// A space separated list of all known HTML tags,\n\t// used together with \"disabled_on_single_snippets\" option\n\t\"known_html_tags\": \"html head title base link meta style script noscript body section nav article aside h1 h2 h3 h4 h5 h6 hgroup header footer address p hr pre blockquote ol ul li dl dt dd figure figcaption div a em strong small s cite q dfn abbr data time code var samp kbd sub sup i b u mark ruby rt rp bdi bdo span br wbr ins del img iframe embed object param video audio source track canvas map area svg math table caption colgroup col tbody thead tfoot tr td th form fieldset legend label input button select datalist optgroup option textarea keygen output progress meter details summary command menu main template\",\n\n\t\"empty_elements\": \"area base basefont br col frame hr img input isindex link meta param embed\",\n\n\t// If set to `true`, Emmet will automatically insert final tabstop\n\t// at the end of expanded abbreviation\n\t\"insert_final_tabstop\": false,\n\n\t// Try to automatically detect XHTML dialect in HTML documents.\n\t// With this option enabled, your custom profile for HTML documents may not work.\n\t\"autodetect_xhtml\": true,\n\n\t// Use old Tab handler to expand abbreviations.\n\t// With this option enabled, editor may better handle Tab key\n\t// (especially with other plugins that overrides Tab key),\n\t// but will spit \"slow plugin\" message\n\t\"use_old_tab_handler\": false,\n\n\t// Disables PyV8 auto-update. Useful for users who installed PyV8\n\t// manually from https://github.com/emmetio/pyv8-binaries because\n\t// of local proxy restrictions\n\t\"disable_pyv8_update\": false,\n\n\t// Expand abbreviations inside PHP strings on single line\n\t// (e.g. without formatting)\n\t\"php_single_line\": false,\n\n\t///////////////////////////////\n\t// Emmet customization\n\t// Each section has the same meaning as the same-named JSON file \n\t// described here:\n\t// http://docs.emmet.io/customization/\n\t///////////////////////////////\n\n\n\t// Custom snippets definitions, as per https://github.com/emmetio/emmet/blob/master/snippets.json\n\t\"snippets\": {\n\t\t// \"html\": {\n\t\t// \t\"abbreviations\": {\n\t\t// \t\t\"example\": \"<div class='example' title='Custom element example'>\"\n\t\t// \t}\n\t\t// }\n\t},\n\n\t// Emmet preferences\n\t// List of all available preferences:\n\t// http://docs.emmet.io/customization/preferences/\n\t\"preferences\": {\n\t\t// \"css.valueSeparator\": \": \",\n\t\t// \"css.propertyEnd\": \";\"\n\t},\n\n\t// Output profiles for syntaxes\n\t// http://docs.emmet.io/customization/syntax-profiles/\n\t\"syntaxProfiles\": {\n\t\t// Enable XHTML dialect for HTML syntax\n\t\t// \"html\": \"xhtml\"\n\t\t// \n\t\t// Write chained CSS abbreviations on single line:\n\t\t// \"css\": \"css_line\"\n\t}\n}\n",
+			"file": "/home/michael/.config/sublime-text-3/Packages/Emmet/Emmet.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 5421,
+				"line_ending": "Unix",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "2_Diff Two Arrays.js",
+			"settings":
+			{
+				"buffer_size": 515,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "3_Roman Numeral Converter.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 280.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git l",
+				"git: log"
+			],
+			[
+				"git s",
+				"git: status"
+			],
+			[
+				"git",
+				"git: branch"
+			],
+			[
+				"branch",
+				"git: branch"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 492.0
+	},
+	"console":
+	{
+		"height": 241.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/michael/Documents/FreeCodeCamp",
+		"/home/michael/Documents/FreeCodeCamp/Front End Development Certification",
+		"/home/michael/Documents/FreeCodeCamp/Front End Development Certification/Intermediate Algorithm Scripting"
+	],
+	"file_history":
+	[
+		"/home/michael/Documents/FreeCodeCamp/Front End Development Certification/Intermediate Algorithm Scripting/2_Diff Two Arrays.js",
+		"/home/michael/Documents/FreeCodeCamp/Front End Development Certification/Intermediate Algorithm Scripting/3_Roman Numeral Converter.js",
+		"/home/michael/.config/sublime-text-3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/Sublime-HTMLPrettify/.jsbeautifyrc.defaults.json",
+		"/home/michael/.config/sublime-text-3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Settings/SideBarEnhancements.json",
+		"/home/michael/.config/sublime-text-3/Packages/User/Git.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/Git/Git.sublime-settings",
+		"/home/michael/Documents/FreeCodeCamp/Front End Development Certification/Intermediate Algorithm Scripting/Diff Two Arrays.js",
+		"/home/michael/Documents/FreeCodeCamp/Front End Development Certification/Intermediate Algorithm Scripting/Sum All Numbers in a Range Complete.js",
+		"/home/michael/.config/sublime-text-3/Packages/DocBlockr/README.md",
+		"/opt/sublime_text/sublime_plugin.py",
+		"/home/michael/.config/sublime-text-3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/User/JavaScript-Completions.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/User/Side Bar.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/michael/.config/sublime-text-3/Packages/SideBarEnhancements/Default (Linux).sublime-keymap",
+		"/home/michael/.config/sublime-text-3/Packages/User/JsFormat.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/JsFormat/Default (Linux).sublime-keymap",
+		"/home/michael/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/michael/.config/sublime-text-3/Packages/User/node.sublime-build"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"jQuery"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "1_Sum All Numbers in a Range Complete.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"git_savvy.repo_path": "/home/michael/Documents/FreeCodeCamp",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1688,
+								1688
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "/home/michael/Documents/FreeCodeCamp",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/michael/.config/sublime-text-3/Packages/Emmet/Emmet.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5421,
+								5421
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "2_Diff Two Arrays.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 515,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"git_savvy.repo_path": "/home/michael/Documents/FreeCodeCamp",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "3_Roman Numeral Converter.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_savvy.repo_path": "/home/michael/Documents/FreeCodeCamp",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 168.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.show_commit_info":
+	{
+		"height": 122.0
+	},
+	"pinned_build_system": "Packages/User/node.sublime-build",
+	"project": "IntermediateAlgorithmScripting.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 357.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
