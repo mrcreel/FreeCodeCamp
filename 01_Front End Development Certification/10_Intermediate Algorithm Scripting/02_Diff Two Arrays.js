@@ -24,5 +24,5 @@ function diffArray(arr1, arr2) {
 
 }
 
-var x = diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4]);
-console.log(x);
+var res = diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4]);
+console.log(res);
