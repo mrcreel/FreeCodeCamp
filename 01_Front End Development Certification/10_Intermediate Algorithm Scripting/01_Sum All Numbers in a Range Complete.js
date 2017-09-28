@@ -9,3 +9,6 @@ function sumAll(arr) {
 
 }
 
+var x = sumAll([1, 4]);
+
+console.log(x);
