@@ -4,6 +4,10 @@ function convertToRoman(num) {
 
     var i = 0;
 
+    var varValue = 0;
+    var varLetter = "";
+    var varMax = 0;
+
     var quotient = 0;
     var remainder = num;
 
@@ -33,9 +37,18 @@ function convertToRoman(num) {
 
     for(i = 0; i < numerals.length; i++ ){
 
-    	quotient = Math.floor(remainder/numerals[i].value);
-    	remainder = remainder%numerals[i].value;
-    	console.log(numerals[i].letter, quotient);
+    	varValue = numerals[i].value;
+    	varLetter = numerals[i].letter;
+    	varMax = numerals[i].max;
+
+    	quotient = Math.floor(remainder/varValue);
+    	remainder = remainder%varValue;
+    	console.log(
+    		quotient,
+    		varMax,
+    		varLetter,
+    		quotient > varMax,
+    		Array(quotient+1).join(numerals[i].letter));
     }
 }
 
