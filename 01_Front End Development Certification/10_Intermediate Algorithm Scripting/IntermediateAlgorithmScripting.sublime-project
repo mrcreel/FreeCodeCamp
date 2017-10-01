@@ -5,7 +5,9 @@
 			"file_exclude_patterns":
 			[
 				"03_Roman Numeral Converter.js",
-				"01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/.gitkeep"
+				"01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/.gitkeep",
+				"copy of RQG.html",
+				"copy of styles.css"
 			],
 			"path": "/home/michael/Documents/FreeCodeCamp"
 		}
