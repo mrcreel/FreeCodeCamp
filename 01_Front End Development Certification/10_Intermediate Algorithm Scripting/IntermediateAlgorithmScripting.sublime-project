@@ -2,6 +2,10 @@
 	"folders":
 	[
 		{
+			"file_exclude_patterns":
+			[
+				"03_Roman Numeral Converter.js"
+			],
 			"path": "/home/michael/Documents/FreeCodeCamp"
 		}
 	]
