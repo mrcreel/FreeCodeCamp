@@ -2,14 +2,18 @@ var varQuote;
 var varAuthor;
 var varTweetLength;
 var varRand;
+var arrQuotes = [];
 
 var varUrl = "https://talaikis.com/api/quotes/";
 
 function funcGetNextQuote(arrQuotes) {
+	
 
     if (arrQuotes.length > 0) {
 
         varRand = Math.floor(arrQuotes.length * Math.random());
+
+        console.log(varRand);
 
         varQuote = arrQuotes[varRand].quote;
         varAuthor = arrQuotes[varRand].author;
@@ -42,6 +46,10 @@ function funcGetQuoteList() {
         arrQuotes = data.filter(function(val) {
             return (val.quote.length < 140);
         });
+
+        arrQuotes =  arrQuotes.sort(function() {
+         return 0.5 - Math.random();
+       });
 
         funcGetNextQuote(arrQuotes);
 

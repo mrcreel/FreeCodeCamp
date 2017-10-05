@@ -3,6 +3,7 @@
     top: 33vh;
     left: 35%;
     z-index: 1;
+    max-width: 400px;
 }
 
 .mdl-card__actions {
