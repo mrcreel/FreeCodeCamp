@@ -1,3 +1,4 @@
+
 .mdl-grid {
     position: absolute;
     top: 33vh;
@@ -42,6 +43,9 @@
 #id-quote {
     font-size: 22px;
 }
+#id-author{
+	float: right;
+}
 
 blockquote:before {
     display: none;
@@ -49,6 +53,17 @@ blockquote:before {
 
 blockquote:after {
     display: none;
+}
+blockquote{
+	font-family: 'Roboto', sans-serif;
+}
+#quote-card{
+	margin-bottom: 8px !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+hr{
+	margin: 8px 0;
 }
 .fa {
 	display:inline;
