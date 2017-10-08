@@ -15,29 +15,45 @@ function funcGetQuoteList() {
 }
 
 function funcButtonClicks(arrQuotes){
-  //console.log(arrQuotes);
+
+	$("#id-counter").html(i);
+	$("#id-cat").html(arrQuotes[i].cat);
+	$("#id-quote").html(arrQuotes[i].quote);
+	$("#id-author").html(arrQuotes[i].author);
 
   $('#btn-next').click(function() {
 		 i+=1;
-		 $("#id-counter").html(i);
 
 		 if (i === arrQuotes.length){
 		 	funcGetQuoteList();
 		 }
+
+		 $("#id-counter").html(i);
+		 $("#id-cat").html(arrQuotes[i].cat);
+		 $("#id-quote").html(arrQuotes[i].quote);
+		 $("#id-author").html(arrQuotes[i].author);
+
 		});
 
   $('#btn-prev').click(function() {
 		i-=1;
+
 		if(i === -1){
 			i = 0;
 			}
+
 		$("#id-counter").html(i);
+		$("#id-cat").html(arrQuotes[i].cat);
+		$("#id-quote").html(arrQuotes[i].quote);
+	  $("#id-author").html(arrQuotes[i].author);
+
+		// funcPopulateQuoteBox(arrQuotes);
+
 		});
 
 }
 
-function funcPopulateQuoteBox(arrQuotes, i){
-	
+function funcPopulateQuoteBox(arrQuotes){
 }
 
 $(document).ready(function() {
