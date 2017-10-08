@@ -4,6 +4,8 @@ var varUrl = "https://talaikis.com/api/quotes/";
 var arrQuotes = [];
 //Counter
 var i = 0;
+//Share string
+var txtShare;
 
 function funcGetQuoteList() {
 	i = 0;
@@ -16,10 +18,7 @@ function funcGetQuoteList() {
 
 function funcButtonClicks(arrQuotes){
 
-	$("#id-counter").html(i);
-	$("#id-cat").html(arrQuotes[i].cat);
-	$("#id-quote").html(arrQuotes[i].quote);
-	$("#id-author").html(arrQuotes[i].author);
+		funcPopulateQuoteBox(arrQuotes, i);
 
   $('#btn-next').click(function() {
 		 i+=1;
@@ -28,10 +27,7 @@ function funcButtonClicks(arrQuotes){
 		 	funcGetQuoteList();
 		 }
 
-		 $("#id-counter").html(i);
-		 $("#id-cat").html(arrQuotes[i].cat);
-		 $("#id-quote").html(arrQuotes[i].quote);
-		 $("#id-author").html(arrQuotes[i].author);
+		 funcPopulateQuoteBox(arrQuotes, i);
 
 		});
 
@@ -42,18 +38,23 @@ function funcButtonClicks(arrQuotes){
 			i = 0;
 			}
 
-		$("#id-counter").html(i);
-		$("#id-cat").html(arrQuotes[i].cat);
-		$("#id-quote").html(arrQuotes[i].quote);
-	  $("#id-author").html(arrQuotes[i].author);
-
-		// funcPopulateQuoteBox(arrQuotes);
+		funcPopulateQuoteBox(arrQuotes, i);
 
 		});
 
 }
 
-function funcPopulateQuoteBox(arrQuotes){
+function funcPopulateQuoteBox(arrQuotes, i){
+
+	txtShare = arrQuotes[i].quote;
+	txtShare += "-";
+	txtShare += arrQuotes[i].author;
+
+  $("#id-counter").html(i);
+  $("#id-cat").html(arrQuotes[i].cat);
+  $("#id-quote").html(arrQuotes[i].quote);
+	$("#id-author").html(arrQuotes[i].author);
+
 }
 
 $(document).ready(function() {
