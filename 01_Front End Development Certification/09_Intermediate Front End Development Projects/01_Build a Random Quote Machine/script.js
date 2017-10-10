@@ -46,8 +46,6 @@ function funcButtonClicks(arrQuotes, i){
 
 		});
 
-
-
 }
 
 function funcPopulateQuoteBox(arrQuotes, i){
@@ -80,7 +78,7 @@ function funcTwitterButtonStatus(arrQuotes, i){
 
 	txtShare = arrQuotes[i].quote + " - " + arrQuotes[i].author;
 
-	if (txtShare.length > 100) {
+	if (txtShare.length > 140) {
 		$('#btn-twitter').attr('disabled', 'disabled');
 		$('#btn-twitter').attr('title', 'Too Long to Tweet');
 
@@ -93,7 +91,7 @@ function funcTwitterButtonStatus(arrQuotes, i){
 
 	 		/* Act on the event */
 	 		window.open(
-	 			'https://twitter.com/intent/tweet?text=' + txtShare + '&url=https://codepen.io/mrcreel/full/rGGpJo/',
+	 			'https://twitter.com/intent/tweet?text=' + txtShare,
 	 			'_blank'
   		);
   	});
