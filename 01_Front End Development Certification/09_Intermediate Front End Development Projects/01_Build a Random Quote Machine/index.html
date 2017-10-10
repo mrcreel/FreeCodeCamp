@@ -30,8 +30,9 @@
 </head>
 
 <body>
+  <container class = "mdl-layout mdl-js-layout">
   <header id = "header" class="mdl-layout__header"></header>
-  <main class="mdl-layout mdl-js-layout"></main>
+  <main></main>
   <footer></footer>
   <div id = "buttons">
     <!-- Previous -->
@@ -43,7 +44,7 @@
       <i class="fa fa-chevron-right" aria-hidden="true" title="Next Quote"></i>
     </button>
     <!-- Twitter icon button -->
-    <button id = "btn-twitter" class="mdl-button mdl-js-button mdl-button--icon">
+    <button id = "btn-twitter" target = "_blank" class="mdl-button mdl-js-button mdl-button--icon">
       <i class="fa fa-twitter" aria-hidden="true"></i>
     </button>
     <!-- Facebook icon button -->
@@ -51,11 +52,13 @@
     <i class="fa fa-facebook-official" aria-hidden="true"></i>
     </button>-->
   </div>
-  <div id = "quotes">
+  <div id="quotes">
     <p id="id-cat"></p>
     <p id="id-quote"></p>
     <p id="id-author"></p>
+    <p id="id-text"></p>
   </div>
+</container>
 </body>
 
 </html>

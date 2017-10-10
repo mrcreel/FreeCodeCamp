@@ -62,6 +62,9 @@ function funcPopulateQuoteBox(arrQuotes, i){
   $("#id-quote").html(arrQuotes[i].quote);
 	$("#id-author").html(arrQuotes[i].author);
 
+	$("#id-text").html('<a target = "_blank" href = "https://twitter.com/share?text=' + txtShare + '">' + txtShare + '</a>');
+	txtShare = "";
+
 }
 
 function funcPrevButtonStatus(i){
@@ -79,27 +82,23 @@ function funcPrevButtonStatus(i){
 	}
 }
 
-function funcTwitterButtonStatus(){
+function funcTwitterButtonStatus(txtShare){
 
-  //console.log(txtShare);
-	//console.log(txtShare.length);
-
-	var btnTwitter = document.getElementById("btn-twitter");
-
-	if ( txtShare.length >= 140) {
+	if (txtShare.length > 140) {
 		$('#btn-twitter').attr('disabled', 'disabled');
-		$('#btn-twitter').attr('title', 'Not Available');
+		$('#btn-twitter').attr('title', 'Too Long to Tweet');
 	} else {
 		$('#btn-twitter').removeAttr('disabled');
 	 	$('#btn-twitter').attr('title', 'Tweet This');
-  }
+	 	//$('#btn-twitter').attr('href', '<a target = "_blank" href = "https://twitter.com/share?text=' + txtShare + '">' + txtShare + '</a>');
 
-    $('#btn-twitter').click(function() {
+	 	
+
+	 	$('#btn-twitter').click(function() {
   	/* Act on the event */
-  	console.log(txtShare);
-  });
-
-
+  	window.location = 'https://twitter.com/share?text=' + txtShare;
+  	});
+	}
 }
 
 
