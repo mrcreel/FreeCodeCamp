@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!--Load Roboto font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <!-- Load jQuery -->
@@ -25,18 +26,16 @@
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Random Quote Generator</span>
-      </div>
-    </header>
-
-    <main class="mdl-layout__content" id="id-layout">
-      <div class="cls-ribbon"></div>
-        <div class="mdl-grid">
-          <div class="
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Random Quote Generator</span>
+            </div>
+        </header>
+        <main class="mdl-layout__content" id="id-layout">
+            <div class="cls-ribbon"></div>
+            <div class="mdl-grid">
+                <div class="
               cls-child 
               mdl-cell 
               mdl-cell--6-col-desktop 
@@ -46,46 +45,37 @@
               mdl-cell--4-col-phone 
               mdl-card 
               mdl-shadow--2dp 
-              graybox" 
-              id="id-cardQuote">
-            <div class="mdl-card__title">
-              <h4><p id="id-quote"></p></h4>
+              graybox" id="id-cardQuote">
+                    <div class="mdl-card__title">
+                        <h4><p id="id-quote"></p></h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p id="id-author"></p>
+                    </div>
+                    <div lass="mdl-card__actions mdl-card--border">
+                        <div class="mdl-card__actions">
+                            <!-- Previous -->
+                            <button id="btn-prev" class="mdl-button mdl-js-button mdl-button--icon">
+                                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                            </button>
+                            <!-- Next  -->
+                            <button id="btn-next" class="mdl-button mdl-js-button mdl-button--icon" title="Next Quote">
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </button>
+                            <!-- Twitter icon button -->
+                            <button id="btn-twitter" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--twitter" style="float: right;">
+                                <i class="fa fa-twitter fa-fw"></i> Tweet This</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="mdl-card__supporting-text">
-              <p id="id-author"></p>
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                LEFT
             </div>
-
-            <div lass="mdl-card__actions mdl-card--border">
-              <div class="mdl-card__actions">
-
-                <!-- Previous -->
-                <button id="btn-prev" class="mdl-button mdl-js-button mdl-button--icon">
-                  <i class="fa fa-angle-double-left" aria-hidden="true"></i>
-                </button>
-
-                <!-- Next  -->
-                <button id="btn-next" class="mdl-button mdl-js-button mdl-button--icon" title="Next Quote">
-                  <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                </button>
-
-                <!-- Twitter icon button -->
-                <button id="btn-twitter" target="_blank" class="mdl-button mdl-js-button mdl-button--icon" style="float: right;">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </main>
-
-    <footer class = "mdl-mini-footer">
-      <div class = "mdl-mini-footer__left-section">
-        LEFT
-      </div>
-    </footer>
-    
-  </div>
+        </footer>
+    </div>
 </body>
 <div id="buttons">
     <!-- Facebook icon button -->
