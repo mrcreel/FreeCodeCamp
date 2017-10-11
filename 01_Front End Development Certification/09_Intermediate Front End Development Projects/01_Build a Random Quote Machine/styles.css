@@ -1,9 +1,6 @@
 #id-layout{
 	position: relative;
 }
-.graybox {
-    background-color: #ddd;
-}
 #id-cardQuote {
 	padding: 8px;
 	top: 15vh;
@@ -15,4 +12,42 @@
     background-color: #B3E5FC;
     position: absolute;
 }
+#id-footer{
+	padding: 8px;
+}
+.cls-footer-left--child{
+	margin: 8px;
+}
+#id-drawer--header{
+	margin: 0;
+	padding: 0;
+	background-image: url("drawer-image.jpg");
+}
+#id-drawer--header-img{
+	width: 100%;
+}
+#avatar {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('headShot.jpg');
+    
+    /* make a square container */
+    width: 48px;
+    height: 48px;
 
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    padding: 8px;
+
+    margin: 16px;
+}
+.cls-drawer--header-text{
+	color:white;
+	margin: 8px 0 0 4px;
+}

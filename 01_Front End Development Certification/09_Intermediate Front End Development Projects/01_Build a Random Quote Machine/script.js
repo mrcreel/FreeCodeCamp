@@ -10,101 +10,86 @@ var i = 0;
 var txtShare;
 
 function funcGetQuoteList() {
-	i = 0;
-	// Get quotes 100 at a time
+  i = 0;
+  // Get quotes 100 at a time
   $.getJSON(varUrl, function(data) {
-  	arrQuotes = data;
+    arrQuotes = data;
     funcButtonClicks(arrQuotes, i);
   });
 }
 
-function funcButtonClicks(arrQuotes, i){
+function funcButtonClicks(arrQuotes, i) {
+  funcPopulateQuoteBox(arrQuotes, i);
 
-	funcPopulateQuoteBox(arrQuotes, i);
+  funcPrevButtonStatus(i);
 
-	funcPrevButtonStatus(i);
+  $("#btn-next").click(function() {
+    i += 1;
 
-  $('#btn-next').click(function() {
-		 i+=1;
+    if (i === arrQuotes.length) {
+      funcGetQuoteList();
+    }
 
-		 if (i === arrQuotes.length){
-		 	funcGetQuoteList();
-		 }
+    funcPrevButtonStatus(i);
+    funcPopulateQuoteBox(arrQuotes, i);
+  });
 
-		 funcPrevButtonStatus(i);
-		 funcPopulateQuoteBox(arrQuotes, i);
+  $("#btn-prev").click(function() {
+    i -= 1;
 
-		});
+    if (i === -1) {
+      i = 0;
+    }
 
-  $('#btn-prev').click(function() {
-		i-=1;
-
-		if(i === -1){
-			i = 0;
-			}
-			
-			funcPrevButtonStatus(i);
-			funcPopulateQuoteBox(arrQuotes, i);
-
-		});
-
+    funcPrevButtonStatus(i);
+    funcPopulateQuoteBox(arrQuotes, i);
+  });
 }
 
-function funcPopulateQuoteBox(arrQuotes, i){
-
-
-
-	funcTwitterButtonStatus(arrQuotes, i);
+function funcPopulateQuoteBox(arrQuotes, i) {
+  funcTwitterButtonStatus(arrQuotes, i);
 
   $("#id-cat").html(arrQuotes[i].cat);
   $("#id-quote").html(arrQuotes[i].quote);
-	$("#id-author").html(arrQuotes[i].author);
-
+  $("#id-author").html(arrQuotes[i].author);
 }
 
-function funcPrevButtonStatus(i){
-	/*
+function funcPrevButtonStatus(i) {
+  /*
 	If it's the first quote since loading, the Previous button will be disabled
 	 */
 
-	if (i === 0) {
-		$('#btn-prev').attr('disabled', 'disabled');
-		$('#btn-prev').attr('title', 'Not Available');
-	} else {
-		$('#btn-prev').removeAttr('disabled');
-		$('#btn-prev').attr('title', 'Previous Quote');
-	}
+  if (i === 0) {
+    $("#btn-prev").attr("disabled", "disabled");
+    $("#btn-prev").attr("title", "Not Available");
+  } else {
+    $("#btn-prev").removeAttr("disabled");
+    $("#btn-prev").attr("title", "Previous Quote");
+  }
 }
 
-function funcTwitterButtonStatus(arrQuotes, i){
+function funcTwitterButtonStatus(arrQuotes, i) {
+  txtShare = arrQuotes[i].quote + " - " + arrQuotes[i].author;
 
-	txtShare = arrQuotes[i].quote + " - " + arrQuotes[i].author;
+  if (txtShare.length > 140) {
+    $("#btn-twitter").attr("disabled", "disabled");
+    $("#btn-twitter").attr("title", "Too Long to Tweet");
+  } else {
+    $("#btn-twitter").removeAttr("disabled");
+    $("#btn-twitter").attr("title", "Tweet This");
 
-	if (txtShare.length > 140) {
-		$('#btn-twitter').attr('disabled', 'disabled');
-		$('#btn-twitter').attr('title', 'Too Long to Tweet');
-
-	} else {
-
-		$('#btn-twitter').removeAttr('disabled');
-	 	$('#btn-twitter').attr('title', 'Tweet This');
-
-	 	$('#btn-twitter').unbind().click(function() {
-
-	 		/* Act on the event */
-	 		window.open(
-	 			'https://twitter.com/intent/tweet?text=' + txtShare,
-	 			'_blank'
-  		);
-  	});
-	}
-
-		 	
+    $("#btn-twitter")
+      .unbind()
+      .click(function() {
+        /* Act on the event */
+        window.open(
+          "https://twitter.com/intent/tweet?text=" + txtShare,
+          "_blank"
+        );
+      });
+  }
 }
-
 
 $(document).ready(function() {
-
-	funcGetQuoteList();
-
+  funcGetQuoteList();
 });
