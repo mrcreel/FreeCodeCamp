@@ -5,6 +5,7 @@
     background-color: #ddd;
 }
 #id-cardQuote {
+	padding: 8px;
 	top: 15vh;
 	font-weight: bold;
 }
