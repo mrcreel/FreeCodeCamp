@@ -39,46 +39,46 @@
       </div>
     </header>
 
-
-
-
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Random Quote Generator</span>
     </div>
-
-    <div class="cls-ribbon"></div>
 
     <main class = "mdl-layout__content">
 
       <div class="mdl-grid">
         <div class = "
+          cls-child 
           mdl-cell 
           mdl-cell--6-col-desktop 
           mdl-cell--3-offset-desktop 
-          mdl-cell--4-col-tablet 
-          mdl-cell--2-offset-tablet
+          mdl-cell--6-col-tablet 
+          mdl-cell--1-offset-tablet
           mdl-cell--4-col-phone 
           mdl-card 
           mdl-shadow--2dp 
-          graybox"
-          id = "cardQuote">
+          graybox" 
+          id = "id-cardQuote"
+          >
 
-          <div class = "mdl-card__supporting-text">
-            <blockquote>
-              <p id="id-quote"></p>
-              <footer><p id="id-author"></p></footer>
-            </blockquote>
-          </div>
+          <div class = "mdl-card__title">
+            
+              <h4><p id="id-quote"></p></h4>
+              </div>
+              <div class = "mdl-card__supporting-text">
+              <p id="id-author"></p>
+            </div>
+            
+          
             <div = class="mdl-card__actions mdl-card--border">
           
           <div class = "mdl-card__actions">
             <!-- Previous -->
             <button id = "btn-prev" class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              <i class="fa fa-angle-double-left" aria-hidden="true"></i>
             </button>
             <!-- Next  -->
-            <button id = "btn-next" class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="fa fa-chevron-right" aria-hidden="true" title="Next Quote"></i>
+            <button id = "btn-next" class="mdl-button mdl-js-button mdl-button--icon" title = "Next Quote">
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
             </button>          
             <!-- Twitter icon button -->
               <button id = "btn-twitter" target = "_blank" class="mdl-button mdl-js-button mdl-button--icon" style="float: right;">

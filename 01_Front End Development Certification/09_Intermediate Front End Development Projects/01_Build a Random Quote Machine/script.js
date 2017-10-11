@@ -2,6 +2,8 @@
 var varUrl = "https://talaikis.com/api/quotes/";
 //Array of quotes
 var arrQuotes;
+//Array of categories
+var arrCategories = {};
 //Counter
 var i = 0;
 //Share string
