@@ -13,6 +13,10 @@ function funcGetQuoteList() {
   i = 0;
   // Get quotes 100 at a time
   $.getJSON(varUrl, function(data) {
+
+  	data = data.filter(function(val){
+          return (val.quote.length <= 200);
+        });
     arrQuotes = data;
     funcButtonClicks(arrQuotes, i);
   });

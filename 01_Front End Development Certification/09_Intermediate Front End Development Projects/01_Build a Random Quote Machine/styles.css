@@ -1,15 +1,13 @@
 #id-layout{
 	position: relative;
 }
-.mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-}
 #id-cardQuote {
 	padding: 8px;
 	top: 15vh;
 	font-weight: bold;
+}
+#id-cardQuote__supporting-text{
+	padding: 8px 16px;
 }
 .cls-ribbon {
     width: 100%;
