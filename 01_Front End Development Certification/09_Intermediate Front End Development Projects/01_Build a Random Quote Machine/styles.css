@@ -1,6 +1,11 @@
 #id-layout{
 	position: relative;
 }
+.mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
 #id-cardQuote {
 	padding: 8px;
 	top: 15vh;
@@ -9,7 +14,6 @@
 .cls-ribbon {
     width: 100%;
     height: 50vh;
-    background-color: #B3E5FC;
     position: absolute;
 }
 #id-footer{
@@ -20,7 +24,7 @@
 }
 #id-drawer--header{
 	margin: 0;
-	padding: 0;
+	padding: 4px;
 	background-image: url("drawer-image.jpg");
 }
 #id-drawer--header-img{
@@ -50,4 +54,14 @@
 .cls-drawer--header-text{
 	color:white;
 	margin: 8px 0 0 4px;
+}
+.cls-list-icon {
+  width: 100%;
+  font-size: 13px;
+}
+#id-icon-codepen{
+	margin:1px;
+}
+#id-fa-icons--text{
+	font-size: 15px;
 }
