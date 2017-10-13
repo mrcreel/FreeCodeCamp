@@ -1,65 +1,58 @@
-#id-layout{
-	position: relative;
+#id-layout {
+  position: relative;
 }
 #id-cardQuote {
-	padding: 8px;
-	top: 15vh;
-	font-weight: bold;
+  padding: 8px;
+  top: 15vh;
+  font-weight: bold;
 }
-#id-cardQuote__supporting-text{
-	padding: 8px 16px;
+#id-cardQuote__supporting-text {
+  padding: 8px 16px;
 }
 .cls-ribbon {
-    width: 100%;
-    height: 50vh;
-    position: absolute;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
 }
-#id-footer{
-	padding: 8px;
+#id-footer {
+  padding: 8px;
 }
-.cls-footer-left--child{
-	margin: 8px;
+.cls-footer-left--child {
+  margin: 8px;
 }
-#id-drawer--header{
-	margin: 0;
-	padding: 4px;
-	background-image: url("drawer-image.jpg");
+#id-drawer--header {
+  margin: 0;
+  padding: 4px;
+  background-image: url("https://git.io/vd6Bl");
 }
-#id-drawer--header-img{
-	width: 100%;
+#id-drawer--header-img {
+  width: 100%;
 }
 #avatar {
-    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url('headShot.jpg');
-    
-    /* make a square container */
-    width: 48px;
-    height: 48px;
-
-    /* fill the container, preserving aspect ratio, and cropping to fit */
-    background-size: cover;
-
-    /* center the image vertically and horizontally */
-    background-position: center;
-
-    /* round the edges to a circle with border radius 1/2 container size */
-    border-radius: 50%;
-
-    padding: 8px;
-
-    margin: 16px;
+  background-image: url("https://git.io/vd6BO");
+  /* make a square container */
+  width: 48px;
+  height: 48px;
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+  /* center the image vertically and horizontally */
+  background-position: center;
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+  padding: 8px;
+  margin: 16px;
 }
-.cls-drawer--header-text{
-	color:white;
-	margin: 8px 0 0 4px;
+.cls-drawer--header-text {
+  color: white;
+  margin: 8px 0 0 4px;
 }
 .cls-list-icon {
   width: 100%;
   font-size: 13px;
 }
-#id-icon-codepen{
-	margin:1px;
+#id-icon-codepen {
+  margin: 1px;
 }
-#id-fa-icons--text{
-	font-size: 15px;
+#id-fa-icons--text {
+  font-size: 15px;
 }

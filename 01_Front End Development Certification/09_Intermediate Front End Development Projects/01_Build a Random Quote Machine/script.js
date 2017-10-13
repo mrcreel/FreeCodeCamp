@@ -14,6 +14,7 @@ function funcGetQuoteList() {
   // Get quotes 100 at a time
   $.getJSON(varUrl, function(data) {
 
+  	//Reove long quotes to prevent scrolling on phones
   	data = data.filter(function(val){
           return (val.quote.length <= 200);
         });
