@@ -1,55 +1,68 @@
+
 function convertToRoman(num) {
 
-    var roman = "";
+	var remainder = num;
+	var quotient = 0;
+	var arrRomanNumerals = [{
+		"letter": "M",
+		"value": 1000
+	}, {
+		"letter": "CM",
+		"value": 900
+	}, {
+		"letter": "D",
+		"value": 500
+	}, {
+		"letter": "CD",
+		"value": 400
+	}, {
+		"letter": "C",
+		"value": 100
+	}, {
+		"letter": "XC",
+		"value": 90
+	}, {
+		"letter": "L",
+		"value": 50
+	}, {
+		"letter": "XL",
+		"value": 40
+	}, {
+		"letter": "X",
+		"value": 10
+	}, {
+		"letter": "IX",
+		"value": 9
+	}, {
+		"letter": "V",
+		"value": 5
+	}, {
+		"letter": "IV",
+		"value": 4
+	}, {
+		"letter": "I",
+		"value": 1
+	}];
+	if (num < 1 || num > 3999) {
+		console.log('Enter a number between 1 and 3999');
+	} else {
+		var res = "";
+		for (var key in arrRomanNumerals) {
+			// check if the property/key is defined in the object itself, not in parent
+			if (arrRomanNumerals.hasOwnProperty(key)) {
+				value = arrRomanNumerals[key].value;
+				letter = arrRomanNumerals[key].letter;
+				quotient = Math.floor(remainder / value);
+				remainder = remainder % value;
+				strLetter = letter.repeat(quotient);
+				res = res + strLetter;
+				
+			}
+		}
+      
+      return res;
+	}
 
-    var i = 0;
-
-    var varValue = 0;
-    var varLetter = "";
-    var varMax = 0;
-
-    var quotient = 0;
-    var remainder = num;
-
-    var numerals = [
-    	{"letter":"M",
-    	"value": 1000,
-    	"max" :3},
-    	{"letter":"D",
-    	"value": 500,
-    	"max" :1},
-    	{"letter":"C",
-    	"value": 100,
-    	"max" :3},
-    	{"letter":"L",
-    	"value": 50,
-    	"max" :1},
-    	{"letter":"X",
-    	"value": 10,
-    	"max" :3},
-    	{"letter":"V",
-    	"value": 5,
-    	"max" :1},
-    	{"letter":"I",
-    	"value": 1,
-    	"max" :3}
-    ];
-
-    for(i = 0; i < numerals.length; i++ ){
-
-    	varValue = numerals[i].value;
-    	varLetter = numerals[i].letter;
-    	varMax = numerals[i].max;
-
-    	quotient = Math.floor(remainder/varValue);
-    	remainder = remainder%varValue;
-    	console.log(
-    		quotient,
-    		varMax,
-    		varLetter,
-    		quotient > varMax,
-    		Array(quotient+1).join(numerals[i].letter));
-    }
 }
 
-convertToRoman(3999);
+convertToRoman(36);
