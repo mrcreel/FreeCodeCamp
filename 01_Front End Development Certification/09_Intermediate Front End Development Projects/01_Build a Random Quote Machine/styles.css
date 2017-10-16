@@ -46,13 +46,31 @@
   color: white;
   margin: 8px 0 0 4px;
 }
-.cls-list-icon {
-  width: 100%;
-  font-size: 13px;
+#id-drawer--header-name{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
 #id-icon-codepen {
   margin: 1px;
 }
 #id-fa-icons--text {
   font-size: 15px;
+}
+#id-drawer__footer{
+  position: absolute;
+  bottom: 0;
+  background-color: blue;
+  width: 100%;
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
+  display: flex;
+  justify-content: space-around;
+  display: block;
+  color:white;
+}
+#id-beg{
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
 }

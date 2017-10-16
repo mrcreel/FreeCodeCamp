@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!--Load Roboto font -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <!-- Load jQuery -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js">
@@ -35,56 +35,93 @@
   <div class="mdl-layout mdl-js-layout">
     <div class="mdl-layout__drawer">
       <div id="id-drawer--header">
-        <div id="avatar">
-        </div>
-
-
-        <p class="cls-drawer--header-text" style="font-weight: bold;">Michael R
-        Creel</p>
+        <div id="avatar"></div>
+        <p id = "id-drawer--header-name">
+          Michael R Creel
+        </p>
         <a href="mailto:michaelrcreel@gmail.com" target="_blank">
-        <p class="cls-drawer--header-text">michaelrcreel@gmail.com</p></a>
+          <p style = "color:white; text-decoration: none;">
+            michaelrcreel@gmail.com
+          </p>
+        </a>
       </div>
-
-
-      <ul class="cls-list-icon mdl-list">
-        <li class="mdl-list__item"><span class=
-        "mdl-list__item-primary-content">Mystery Quote Machine</span>
-        </li>
-
-
-        <li style="list-style: none; display: inline">
-          <hr>
-          <!-- Icon List -->
-        </li>
-
-
-        <li class="mdl-list__item" id="id-fa-icons--text"><button class=
-        " mdl-button mdl-js-button mdl-js-ripple-effect mdl-list__item-primary-content">
-        </button>
-        </li>
-      </ul>
+    <div id = "id-drawer__text">
+      <span>
+        <h5 style="margin: 4px;">
+          Mystery Quote Machine
+        </h5>
+        <p style="margin: 4px;">
+          A Submission for FreeCodeCamp's
+          <a href="https://www.freecodecamp.org/challenges/build-a-random-quote-machine" target="_blank">
+            Random Quote Generator
+          </a> Project
+        </p>
+      </span>
+      <hr>
+      <div id = "id-codepen">
+        <div style="margin: 4px;">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+          <i class="fa fa-free-code-camp" aria-hidden="true">
+          <div class="mdl-layout-spacer"></div> 
+          </i>
+             Live on Codepen
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div id = "id-github">
+      <div style="margin: 4px;">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+          <i class="fa fa-github" aria-hidden="true">
+          <div class="mdl-layout-spacer"></div> 
+          </i>
+              Code on GitHub
+          </button>
+        </div>
+    </div>
+      <hr>
+        <div id = "id-drawer__footer" >
+          <p id = "id-beg">Please Follow Me on ...</p>
+          <a href="https://www.freecodecamp.org/mrcreel"
+            title = "FreeCodeCamp" 
+            target="_blank">
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+              <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            </button>
+          </a>
+          <a href="https://github.com/mrcreel/" 
+            title = "GitHub" 
+            target="_blank">
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </button>
+          </a>
+          <a href="https://codepen.io/mrcreel" title="CodePen" target="_blank">
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/michael-creel-84364339/" title = "LinkedIn" target="_blank">
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </button>
+          </a>
+        </div>
+    </div>
     </div>
 
-
     <main class="mdl-layout__content" id="id-layout">
-      <div class="cls-ribbon mdl-color--accent">
-      </div>
+      <div class="cls-ribbon mdl-color--accent"></div>
       <!--
         Put the quote card inside a grid col that is centered on all devices
       -->
-
-
       <div class="mdl-grid">
         <div class=
         " cls-child mdl-cell mdl-cell--6-col-desktop mdl-cell--3-offset-desktop mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp graybox"
         id="id-cardQuote">
           <div class="mdl-card__title">
-            <h4>
-            </h4>
-
-
-            <p id="id-quote">
-            </p>
+            <h4></h4>
+            <p id="id-quote"></p>
           </div>
 
 
