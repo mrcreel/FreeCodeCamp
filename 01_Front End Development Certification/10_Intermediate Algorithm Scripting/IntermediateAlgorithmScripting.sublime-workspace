@@ -132,39 +132,12 @@
 	"buffers":
 	[
 		{
-			"file": "/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/index.html",
+			"contents": "\n  BRANCH:  On branch `FCCScriptingChallenges` tracking `origin/FCCScriptingChallenges`.\n  ROOT:    ~/Documents/FreeCodeCamp\n  HEAD:    cb3c5ea Finished challenge\n\n  LOCAL:\n    aaff832 FCC-RQG__Footer (origin/FCC-RQG__Footer)\n  ▸ cb3c5ea FCCScriptingChallenges (origin/FCCScriptingChallenges)\n    c253265 MysteryQuoteMachine_DrawerComplete (origin/MysteryQuoteMachine_DrawerComplete)\n    d9150fd RomanNumeralConverter (origin/RomanNumeralConverter)\n    4e47d58 WorkingOnLayout (origin/WorkingOnLayout)\n    1dd1506 master (origin/master, behind 1)\n\n  ** Press [e] to toggle display of remote branches. **\n\n  #############\n  ## ACTIONS ##\n  #############\n\n  [c] checkout                                  [p] push selected to remote\n  [b] create from selected branch               [P] push all branches to remote\n  [d] delete                                    [h] fetch remote branches\n  [D] delete (force)                            [m] merge selected into active branch\n  [R] rename (local)                            [M] fetch and merge into active branch\n  [t] configure tracking\n\n  [f] diff against active                       [l] show branch log\n  [H] diff history against active               [g] show branch log graph\n  [E] edit branch description\n\n  [e]         toggle display of remote branches\n  [tab]       transition to next dashboard\n  [SHIFT-tab] transition to previous dashboard\n  [r]         refresh\n  [?]         toggle this help menu\n\n-\n\n",
 			"settings":
 			{
-				"buffer_size": 642,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/styles.css",
-			"settings":
-			{
-				"buffer_size": 0,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/script.js",
-			"settings":
-			{
-				"buffer_size": 0,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\n  BRANCH:  On branch `master` tracking `origin/master`.\n  ROOT:    ~/Documents/FreeCodeCamp\n  HEAD:    fa50ee4 Deleted copis of main files\n\n    Your working directory is clean.\n\n  STASHES:\n    (0) main done, working on the \"subtraction\" rules\n\n  ###################                   ###############\n  ## SELECTED FILE ##                   ## ALL FILES ##\n  ###################                   ###############\n\n  [o] open file                         [a] stage all unstaged files\n  [s] stage file                        [A] stage all unstaged and untracked files\n  [u] unstage file                      [U] unstage all staged files\n  [d] discard changes to file           [D] discard all unstaged changes\n  [h] open file on remote\n  [M] launch external merge tool for conflict\n\n  [l] diff file inline                  [f] diff all files\n  [e] diff file                         [F] diff all cached files\n\n  #############                         #############\n  ## ACTIONS ##                         ## STASHES ##\n  #############                         #############\n\n  [c] commit                            [t][a] apply stash\n  [C] commit, including unstaged        [t][p] pop stash\n  [m] amend previous commit             [t][s] show stash\n  [p] push current branch               [t][c] create stash\n                                        [t][u] create stash including untracked files\n  [i] ignore file                       [t][g] create stash of staged changes only\n  [I] ignore pattern                    [t][d] drop stash\n\n  ###########\n  ## OTHER ##\n  ###########\n\n  [r]         refresh status\n  [?]         toggle this help menu\n  [tab]       transition to next dashboard\n  [SHIFT-tab] transition to previous dashboard\n  [.]         move cursor to next file\n  [,]         move cursor to previous file\n\n-\n\n",
-			"settings":
-			{
-				"buffer_size": 1816,
+				"buffer_size": 1456,
 				"line_ending": "Unix",
-				"name": "STATUS: FreeCodeCamp",
+				"name": "BRANCHES: FreeCodeCamp",
 				"read_only": true,
 				"scratch": true
 			}
@@ -243,16 +216,16 @@
 	"expanded_folders":
 	[
 		"/home/michael/Documents/FreeCodeCamp",
-		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification",
-		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects",
-		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine"
+		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification"
 	],
 	"file_history":
 	[
+		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/script.js",
+		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/styles.css",
+		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/index.html",
 		"/home/michael/Documents/FreeCodeCamp/copy of styles.css",
 		"/home/michael/Documents/FreeCodeCamp/copy of RQG.html",
 		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/index2.html",
-		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/script.js",
 		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/10_Intermediate Algorithm Scripting/03_Roman Numeral Converter.js",
 		"/home/michael/Documents/FreeCodeCamp/03_Roman Numeral Converter.js",
 		"/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/10_Intermediate Algorithm Scripting/02_Diff Two Arrays.js",
@@ -290,7 +263,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -333,123 +306,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 642,
+						"buffer_size": 1456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								308,
-								308
-							]
-						],
-						"settings":
-						{
-							"git_savvy.repo_path": "/home/michael/Documents/FreeCodeCamp",
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_savvy.repo_path": "/home/michael/Documents/FreeCodeCamp",
-							"open_with_edit": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/michael/Documents/FreeCodeCamp/01_Front End Development Certification/09_Intermediate Front End Development Projects/01_Build a Random Quote Machine/script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_savvy.repo_path": "/home/michael/Documents/FreeCodeCamp",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								185,
-								185
+								250,
+								250
 							]
 						],
 						"settings":
 						{
 							"__vi_external_disable": false,
 							"default_dir": "/home/michael/Documents/FreeCodeCamp",
+							"git_savvy.branch_view": true,
 							"git_savvy.help_hidden": false,
-							"git_savvy.interface": "status",
+							"git_savvy.interface": "branch",
 							"git_savvy.repo_path": "/home/michael/Documents/FreeCodeCamp",
-							"git_savvy.status_view": true,
 							"git_savvy.tabbable": true,
-							"syntax": "Packages/GitSavvy/syntax/status.sublime-syntax",
+							"syntax": "Packages/GitSavvy/syntax/branch.sublime-syntax",
 							"tab_size": 2,
 							"word_wrap": false
 						},
@@ -457,7 +337,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -465,7 +345,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -518,7 +398,7 @@
 	"project": "IntermediateAlgorithmScripting.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -532,12 +412,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/FCC_MagicalMysteryQuotes/FCC_MagicalMysteryQuotes.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

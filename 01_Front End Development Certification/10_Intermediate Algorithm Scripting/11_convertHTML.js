@@ -1,52 +1,30 @@
 function convertHTML(str) {
 
-	var varResult = "";
+    function funcReplaceAll(str, find, replace) {
+        return str.replace(new RegExp(find, 'g'), replace);
+    }
 
-	var objChars = {
-		apostrophe: {"varChar": "[/'/g]", "varRepl":"&apos;"}//,
-		// ampersand: {"varChar": "[/&/g]", "varRepl":"&amp;"},
-		// lessThan: {"varChar": "[/</g]", "varRepl":"&lt;"},
-		// greaterThan: {"varChar": "[/>/g]", "varRepl":"&gt;"},
-		// quotation: {"varChar": '[/"/g]', "varRepl":"&quot;"}
-		// "[/'/g]":"&apos;"},
-		// "/&/g":"&amp;",
-		// "[/</g]":"&lt;",
-		// "[/>/g]":"&gt;",
-		// '[/"/g]':"&quot;"
-	};
+    var arrChars = [
+    	["&", "&amp;"],
+    	["'", "&apos;"],
+      ["<", "&lt;"],
+      [">", "&gt;"],
+      ['"', "&quot;"]
+    ];
 
-	function funcFindReplace(varResult, o){
-		var varResultSlice;
-		var n = varResult.search(objChars[o].varChar);
-		if(n != -1) {
-			varResultSlice = varResult.slice(0, n).concat(
-				objChars[o].varRepl,
-				varResult.slice(n+1));
+    console.log(str);
+    for (var a in arrChars) {
+        var strSearch = arrChars[a][0];
+        var strReplace = arrChars[a][1];
 
-			console.log(
-			varResult,
-			"|",
-			objChars[o].varChar,
-			":",
-			n,
-			"|",
-			objChars[o].varRepl,
-			"|",
-			varResultSlice
-			);
-		}
+        str = funcReplaceAll(str, strSearch, strReplace);
 
-		return varResultSlice;
+    }
 
-	}
+    console.log(str);
 
-
-	for (var o in objChars){
-		funcFindReplace(str, o);
-		}
-		
-  // &colon;&rpar;
-  return str;
+    // &colon;&rpar;
+    return str;
 }
 
 convertHTML("Shindler's List");
