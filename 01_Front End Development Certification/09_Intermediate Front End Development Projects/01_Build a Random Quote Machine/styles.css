@@ -17,6 +17,7 @@
 }
 #id-footer {
   padding: 8px;
+  align-items: center;
 }
 .cls-footer-left--child {
   margin: 8px;

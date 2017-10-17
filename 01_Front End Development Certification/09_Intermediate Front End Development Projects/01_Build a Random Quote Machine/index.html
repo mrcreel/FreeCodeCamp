@@ -13,8 +13,7 @@
   </script>
 
   <!-- Load local javascript & CSS files -->
-  <script language="JavaScript" src="script.js" type="text/javascript">
-  </script>
+  <script src="script.js" type="text/javascript"></script>
   <link href="styles.css" rel="stylesheet" type="text/css">
   
   <!-- Load Material Design Lite -->
@@ -98,7 +97,16 @@
         </div>
     </div>
       <hr>
+
         <div id = "id-drawer__footer" >
+          <p id = "id-mdl">Built with</p>
+          <a href = "https://getmdl.io/" 
+            title="Material Design Lite"
+            target="_blank"> 
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect" style = "color:white;">
+              Material Design Lite 
+          </button>
+        </a>
           <p id = "id-beg">Follow Me on ...</p>
           <a href="https://www.freecodecamp.org/mrcreel"
             title = "FreeCodeCamp" 
@@ -158,8 +166,7 @@
 
           <div class="mdl-card__supporting-text" id=
           "id-cardQuote__supporting-text">
-            <p id="id-author">
-            </p>
+            <p id="id-author"></p>
           </div>
 
 
@@ -174,21 +181,43 @@
                <button class=
               "mdl-button mdl-js-button mdl-button--accent mdl-button--raised mdl-js-ripple-effect mdl-button--twitter"
               id="btn-twitter" style="float: right;"><i class=
-              "fa fa-twitter fa-fw"></i> Tweet</button>
+              "fa fa-twitter fa-fw"></i> Tweet
+            </button>
             </div>
           </div>
+        </div>
         </div>
     </main>
 
 
-    <footer class="mdl-mini-footer cls-HeaderFooter" id="id-footer" style=
-    "background-color: LightGray; color:black;">
-      <div class="mdl-mini-footer__left-section">
-        <p class="cls-footer-left--child">Built with <a href=
-        "https://www.getmdl.io" target="_blank">Material Design Lite</a></p>
+    <footer
+        class="
+          mdl-mini-footer 
+          cls-HeaderFooter" 
+        id="id-footer" 
+        style="background-color: LightGray; color:black;">
+      <div class="mdl-mini-footer__left-section" style="font-size:16px;">
+
+        <span class="cls-footer-left--child">
+          
+
+          <a 
+            href= "https://talaikis.com/" 
+            target="_blank">
+
+          <button 
+            class="mdl-button mdl-js-button mdl-js-ripple-effect">            
+
+            Quotes via Tadas Talaikis Quote API
+          
+        </button>
+
+      </a>
+
+        </span>
+
       </div>
     </footer>
-  </div>
   </div>
 </body>
 </html>
