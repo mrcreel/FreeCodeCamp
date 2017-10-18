@@ -21,51 +21,102 @@ function smallestCommons(arr) {
         return [arrRange, min, max];
     }
 
-    function funcPrimesBelow(numNumber) {
-    	var arrPrimes = [];
-        for (var i = 2; i <= numNumber; i++) {
-            var numHalf = Math.floor(i / 2);
-            var arrTemp = [];
-            
-            for (var j = 2; j <= numHalf; j++) {
-                if (i % j === 0) {
-                    arrTemp.push(j);
-                }
-            }
-            if (arrTemp.length === 0) {
-                arrPrimes.push(i);
+    function funcIsPrimeOrFactors(numNumber) {
+        // body... 
+        var numHalf = Math.floor(numNumber / 2);
+        var arrFactors = [];
+
+        for (var i = 2; i <= numHalf; i++) {
+            var numQuotient = Math.floor(numNumber / i);
+            var numRemainder = numNumber % i;
+            if (numRemainder === 0) {
+                var varMinMax = funcMinMax([i, numQuotient]);
+                var min = varMinMax[0];
+                var max = varMinMax[1];
+                arrFactors.push([min, max]);
             }
         }
-        return arrPrimes;
+        arrUniqueFactors = arrFactors.slice(0, Math.ceil(arrFactors.length / 2));
+        return {
+            "number": numNumber,
+            "prime": arrUniqueFactors.length === 0,
+            "factors": arrUniqueFactors
+        };
     }
 
-    function funcFindFactors(numNumber, arrArray){
-    	var arrFactors = [];
+    function funcPrimesBelow(numNumber) {
+        var arrPrimesBelow = [];
+        for (i = 2; i <= numNumber; i++) {
 
-    	numNumber = 12;
-    	arrArray = [2, 3, 5, 7, 11];
-
-    	arrArray.forEach( function(element, index) {
-    		// statements
-    		if (numNumber%element === 0){
-    			console.log(numNumber, 
-    				element, 
-    				Math.floor(numNumber/element));
-    		}    		
-    	});
+            var varReturn = funcIsPrimeOrFactors(i);
+            if (varReturn.prime === true) {
+                arrPrimesBelow.push(varReturn.number);
+            }
+        }
+        return arrPrimesBelow;
     }
-
 
     arrNumRange = funcNumRange(arr, true);
     var arrRange = arrNumRange[0];
     var numMin = arrNumRange[1];
     var numMax = arrNumRange[2];
 
-    arrPrimes = funcPrimesBelow(numMax);
+    // arrPrimeOrFactors = funcIsPrimeOrFactors(numMax);
+    // if (arrPrimeOrFactors.prime === true) {
+    //     arrPrimeOrFactors.factors.push(numMax);
+    // }
+    // arrPrimesBelow = funcPrimesBelow(numMax);
 
-    console.log(arrPrimes);
+    arrRange.forEach( function(element, index) {
+      	// statements
+      	var arrPrimeFactors = [];
+      	var arrPrimesBelow = [];
+      	var arrSpecs = funcIsPrimeOrFactors(element);
+      	var numVar = element;
+      	var numIndex = index;
+      	var boolIsPrime = arrSpecs.prime;
+      	var arrFactors = arrSpecs.factors;
 
-    console.log(funcFindFactors());
+      	arrPrimesBelow = funcPrimesBelow(numVar);
+      	
+      	var numTest = numVar;
+
+      	for (var a in arrPrimesBelow) {
+      		// statements      		
+      		var varElement = arrPrimesBelow[a];
+      		console.log(numTest);
+      		console.log("-----");
+
+      		
+
+      		var numQuotient = Math.floor(numTest/varElement);
+      		var numRemainder = numTest % varElement;
+
+      		if(numRemainder === 0){
+      			arrPrimeFactors.push(varElement);
+      			numTest -= element;
+      			if(numTest === 0){
+      				return;
+      		}}
+
+      		console.log(varElement,
+      			numQuotient,
+      			numRemainder
+      			);
+      	}
+
+
+
+
+
+      	
+  	});
+
+
+
+
+
+
 
 
 
@@ -74,7 +125,7 @@ function smallestCommons(arr) {
 
 
 //smallestCommons([1, 5]); // should return 60.
-smallestCommons([12, 1]); // should return 60.
+smallestCommons([12, 12]); // should return 60.
 //smallestCommons([1, 13]); // should return 360360.
 //smallestCommons([23, 18]); // should return 6056820.
 //
